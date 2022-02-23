@@ -150,7 +150,6 @@ body {
 
 .section.advantages .section-text {
     color: var(--text-primary-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -173,7 +172,6 @@ body {
 
 .section.team .section-text {
     color: var(--text-primary-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -188,6 +186,8 @@ body {
 .button {
     background-color: var(--batton-secondary-color);
     color: var(--text-secondary-color);
+    border: 0;
+    border-radius: 4px;
 }
 
 .button:hover,
@@ -196,6 +196,15 @@ body {
 .button.primary {
     background-color: var(--batton-primary-color);
     color: var(--white-color);
+    cursor: pointer;
+}
+
+.button.hover:hover,
+.button.hover:focus,
+.button.hover:active,
+.button.current.hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 
@@ -214,9 +223,12 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer .link.link-address {
+    color: var(--white-color);
+}
+
 .footer.list {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -246,7 +258,6 @@ body {
 
 .portfolio .section-text {
     color: var(--text-primary-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
